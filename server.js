@@ -18,6 +18,9 @@ app.use(routes);
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/nytreact");
+// ran in Command Line to get the seeds up: 
+// heroku run node scripts/seedDB.js
+
 
 // Start the API server
 app.listen(PORT, function() {
